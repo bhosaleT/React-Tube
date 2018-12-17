@@ -15,19 +15,15 @@ export default class SearchBar extends React.Component {
   };
 
   render() {
-    return (
-      <div className="search-bar ui segment">
+    return <div className="search-bar ui segment">
         <form onSubmit={this.onFormSubmit} action="" className="ui form">
           <div className="field">
-            <label>React-Tube Search</label>
-            <input
-              type="text"
-              value={this.state.query}
-              onChange={this.onInputChange}
-            />
+            <label>
+              <h2>React-Tube Search</h2>
+            </label>
+            <input type="text" value={this.state.query} onChange={this.onInputChange} />
           </div>
         </form>
-      </div>
-    );
+      </div>;
   }
 }
