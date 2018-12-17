@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import VideoList from './VideoList';
 import youtube from "../apis/youtube";
 
 export default class App extends React.Component {
@@ -19,7 +20,7 @@ export default class App extends React.Component {
     return (
       <div className="ui container">
         <SearchBar onTermSubmit={this.onTermSubmit} />
-        I have {this.state.videos.length} videos showing up.
+        <VideoList videos = {this.state.videos}/>
       </div>
     );
   }
