@@ -19,7 +19,7 @@ export default class SearchBar extends React.Component {
       <div className="search-bar ui segment">
         <form onSubmit={this.onFormSubmit} action="" className="ui form">
           <div className="field">
-            <label>Video Search</label>
+            <label>React-Tube Search</label>
             <input
               type="text"
               value={this.state.query}
