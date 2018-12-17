@@ -9,11 +9,10 @@ export default class SearchBar extends React.Component {
     });
   };
 
-  onFormSubmit = (e) => {
+  onFormSubmit = e => {
     e.preventDefault();
-
-    //TODO: make sure we call the callback function passed on from the parent function.
-  }
+    this.props.onTermSubmit(this.state.query);
+  };
 
   render() {
     return (
